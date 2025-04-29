@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Memory Card Match 🎮</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <!-- Style -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Memory Card Match 🎮</h1>
+    <div class="stats">
+      <div>⏱ Time: <span id="time">0</span>s</div>
+      <div>🔄 Moves: <span id="moves">0</span></div>
+    </div>
+    <div id="gameGrid" class="game-grid"></div>
+    <button id="restartBtn" class="restart-btn">New Game</button>
+  </div>
+
+  <!-- Win Overlay -->
+  <div id="winOverlay" class="overlay">
+    <div class="win-message">
+      🎉 You Won! 🎉
+      <button id="overlayRestart" class="restart-btn">Play Again</button>
+    </div>
+  </div>
+
+  <!-- Confetti Library -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <!-- Tilt Effect -->
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+  <!-- Game Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
